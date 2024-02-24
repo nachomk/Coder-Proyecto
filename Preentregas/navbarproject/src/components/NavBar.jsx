@@ -9,8 +9,8 @@ const Navbar = () => {
         <div className="mr-20">
           <img src="" alt="" />
         </div>
-        <div className="flex items-center justify-start flex-grow">      
-          <h1 className="text-xl text-white">F1Arg</h1>
+        <div className="flex items-center flex-grow">      
+          <h1 className="text-xl text-white ">F1Arg</h1>
           <form className="bg-white p-2 h-[20%] w-full rounded-lg">
           <input type="text" />
           </form>
@@ -22,24 +22,24 @@ const Navbar = () => {
                 className="text-white text-xl"
                 onClick={() => setShowCateogires(!showCateogires)}
               >
-                Categorias
+                Tienda
               </button>
               {showCateogires && (
                 <ul className="absolute bg-white text-xl w-[19%]">
                   <li>
-                    <button className="hover:underline">Categoría 1</button>
+                    <button className="hover:underline">Ropa</button>
                   </li>
                   <li>
-                    <button className="hover:underline">Categoría 2</button>
+                    <button className="hover:underline">Tickets</button>
                   </li>
                   <li>
-                    <button className="hover:underline">Categoría 3</button>
+                    <button className="hover:underline">Regalos/Accesorios</button>
                   </li>
                 </ul>
               )}
             </li>
             <li>
-              <button className="text-white text-xl ">Productos</button>
+              <button className="text-white text-xl ">Calendario</button>
             </li>
             <li>
               <button className="text-white text-xl ">Contacto</button>
