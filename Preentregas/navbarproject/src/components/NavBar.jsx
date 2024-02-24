@@ -4,16 +4,14 @@ const Navbar = () => {
   const [showCateogires, setShowCateogires] = useState(false);
 
   return (
-    <nav className="bg-teal-500 py-4">
+    <nav className="bg-red-500 py-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="mr-20">
           <img src="" alt="" />
         </div>
-        <div className="flex items-center justify-center flex-grow">
-          <img src="" alt="" />
-          <form action="" className="bg-white p-2 h-[20%] w-full rounded-lg">
-            <input type="text" />
-          </form>
+        <div className="flex items-center justify-start flex-grow">
+          <h1 className="text-xl ">F1Arg</h1>
+                    
         </div>
         <div className="ml-20 flex items-center justify-end">
           <ul className="flex space-x-4 justify-end">
