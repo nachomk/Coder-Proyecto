@@ -9,9 +9,11 @@ const Navbar = () => {
         <div className="mr-20">
           <img src="" alt="" />
         </div>
-        <div className="flex items-center justify-start flex-grow">
-          <h1 className="text-xl ">F1Arg</h1>
-                    
+        <div className="flex items-center justify-start flex-grow">      
+          <h1 className="text-xl text-white">F1Arg</h1>
+          <form className="bg-white p-2 h-[20%] w-full rounded-lg">
+          <input type="text" />
+          </form>
         </div>
         <div className="ml-20 flex items-center justify-end">
           <ul className="flex space-x-4 justify-end">
