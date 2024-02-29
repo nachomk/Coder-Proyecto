@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="bg-red-700 py-8">      
       <div className="container mx-auto flex justify-between items-center">    
          
-        <div className="flex items-center">
+        <div className="flex items-center relative right-12">
         <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="#ffffff" d="M9.6 11.24h7.91L19.75 9H9.39c-2.85 0-3.62.34-5.17 1.81C2.71 12.3 0 15 0 15h3.38c.77-.75 2.2-2.13 2.85-2.75c.92-.87 1.37-1.01 3.37-1.01M20.39 9l-6 6H18l6-6zm-3.25 2.61H9.88c-2.22 0-2.6.12-3.55 1.07C5.44 13.57 4 15 4 15h3.15l.75-.75c.49-.49.75-.55 1.78-.55h5.37z"/></svg>
           <div className="text-white text-5xl font-bold">Arg</div>
         </div>
