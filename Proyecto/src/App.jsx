@@ -10,7 +10,7 @@ function App() {
     <>
 
     <Navbar/>
-    <ItemListContainer greeting="Hola"/>
+    <ItemListContainer greeting="Prueba del body"/>
 
     </>
   )
