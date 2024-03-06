@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="bg-red-700 py-4">      
       <div className="container mx-auto flex justify-between items-center">    
          
-        <div className="flex items-center relative" >
+        <div className="flex items-center relative right-12">
           <LogoWidget/>
           <div className="text-white text-5xl font-bold">Argentina</div>
         </div>
