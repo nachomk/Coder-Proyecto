@@ -8,9 +8,10 @@ const ItemDetail = ({item}) => {
     
     
     return (<> 
-        <div className="mx-auto my-auto">
+        <div className="container flex mx-auto my-auto">
             {item.nombre}
             {item.precio}
+            {item.imagen}
             <ItemCount stock={item.stock} initial={0} onAdd={handleAdd}/>
         </div>
     </>);

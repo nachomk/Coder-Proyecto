@@ -29,9 +29,9 @@ const ItemListContainer = () => {
 
   return (
     <>
-      <div>
+      <div className="">
         <h1>Categorias</h1>
-        <div>
+        <div className="flex">
           {response.categorias.map((cat) => {
             return (
               <Link key={cat.id} to={`/category/${cat.id}`}>
