@@ -1,0 +1,44 @@
+{
+    "productos" : [
+        {
+            "id": 1,
+            "nombre": "Remera Ferrari",
+            "descripcion": "Remera Roja de Escuderia Ferrari",
+            "precio": 59,
+            "stock": 100,
+            "imagen": "PONER URL"
+        },
+        {
+            "id": 2,
+            "nombre": "Remera Mercedes",
+            "descripcion": "Remera Gris de Escuderia Mercedes",
+            "precio": 59,
+            "stock": 100,
+            "imagen": "PONER URL"
+        },
+        {
+            "id": 3,
+            "nombre": "Remera RedBull",
+            "descripcion": "Remera Azul de Escuderia RedBull",
+            "precio": 59,
+            "stock": 100,
+            "imagen": "PONER URL"
+        },
+        {
+            "id": 4,
+            "nombre": "Remera Aston Martin",
+            "descripcion": "Remera Verde de Escuderia Aston Martin",
+            "precio": 59,
+            "stock": 100,
+            "imagen": "PONER URL"
+        },
+        {
+            "id": 5,
+            "nombre": "Remera Mclaren",
+            "descripcion": "Remera Naranja de Escuderia Mclaren",
+            "precio": 59,
+            "stock": 100,
+            "imagen": "PONER URL"
+        }
+    ]
+}

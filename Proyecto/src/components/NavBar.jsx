@@ -14,7 +14,7 @@ const Navbar = () => {
           <div className="text-white text-5xl font-bold">Argentina</div>
         </div>
 
-        <div className="flex items-center flex-grow">
+        <div className="flex items-center flex-grow ">
           <form className="bg-white p-2 h-[20%] w-full rounded-lg">
             <input className="w-full" placeholder="Buscar prendas, destinos y más..." type="text"/>
           </form>
@@ -29,7 +29,7 @@ const Navbar = () => {
               >
                 Tienda
               </button>
-              {showCategories && (
+              { showCategories && (
                 <ul className="absolute bg-white text-xl w-[19%] rounded-lg border border-black border-lg p-4">
                   <li>
                     <button className="hover:underline ">  Ropa</button>
