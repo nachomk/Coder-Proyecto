@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CartWidget from "./CartWidget";
 import LogoWidget from "./LogoWidget";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [showCategories, setShowCategories] = useState(false);
@@ -32,28 +33,29 @@ const Navbar = () => {
               { showCategories && (
                 <ul className="absolute bg-white text-xl w-[19%] rounded-lg border border-black border-lg p-4">
                   <li>
-                    <button className="hover:underline ">  Ropa</button>
+                    <NavLink to="category/1" className="hover:underline ">  Ropa</NavLink>
                   </li>
                   <li>
-                    <button className="hover:underline">  Tickets</button>
+                    <NavLink to="/category/2" className="hover:underline">  Tickets</NavLink>
                   </li>
                   <li>
-                    <button className="hover:underline">
+                    <NavLink to="/category/3" className="hover:underline">
                        Regalos/Accesorios
-                    </button>
+                    </NavLink>
                   </li>
                 </ul>
               )}
             </li>
+
             <li>
-              <button className="text-white text-xl hover:underline font-bold">Calendario</button>
+              <NavLink to="/category/4" className="text-white text-xl hover:underline font-bold">Calendario</NavLink>
             </li>
             <li>
-              <button className="text-white text-xl hover:underline font-bold">Contacto</button>
+              <NavLink to="/category/5" className="text-white text-xl hover:underline font-bold">Contacto</NavLink>
             </li>
             <li>
               <button className="text-white text-xl ">
-                <CartWidget/>
+                <CartWidget/> 
               </button>
             </li>
           </ul>
