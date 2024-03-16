@@ -1,4 +1,10 @@
 {
+    "categorias": [
+        {"id": 1, "nombre": "Remeras"},
+        {"id": 2, "nombre": "Cascos"},
+        {"id": 3, "nombre": "Accesorios"}
+
+    ],
     "productos" : [
         {
             "id": 1,
@@ -6,31 +12,36 @@
             "descripcion": "Remera Roja de Escuderia Ferrari",
             "precio": 59,
             "stock": 100,
-            "imagen": "PONER URL"
+            "imagen": "PONER URL",
+            "categoria": 1
+            
         },
         {
             "id": 2,
-            "nombre": "Remera Mercedes",
-            "descripcion": "Remera Gris de Escuderia Mercedes",
+            "nombre": "Casco Mercedes",
+            "descripcion": "Casco de Escuderia Mercedes",
             "precio": 59,
             "stock": 100,
-            "imagen": "PONER URL"
+            "imagen": "PONER URL",
+            "categoria": 2
         },
         {
             "id": 3,
-            "nombre": "Remera RedBull",
-            "descripcion": "Remera Azul de Escuderia RedBull",
+            "nombre": "Llavero RedBull",
+            "descripcion": "Llavero de Escuderia RedBull",
             "precio": 59,
             "stock": 100,
-            "imagen": "PONER URL"
+            "imagen": "PONER URL",
+            "categoria": 3
         },
         {
             "id": 4,
-            "nombre": "Remera Aston Martin",
-            "descripcion": "Remera Verde de Escuderia Aston Martin",
+            "nombre": "Casco Aston Martin",
+            "descripcion": "Casco de Escuderia Aston Martin",
             "precio": 59,
             "stock": 100,
-            "imagen": "PONER URL"
+            "imagen": "PONER URL",
+            "categoria": 2
         },
         {
             "id": 5,
@@ -38,7 +49,8 @@
             "descripcion": "Remera Naranja de Escuderia Mclaren",
             "precio": 59,
             "stock": 100,
-            "imagen": "PONER URL"
+            "imagen": "PONER URL",
+            "categoria": 1
         }
     ]
 }

@@ -595,6 +595,11 @@ video {
   margin-right: auto;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .ml-20 {
   margin-left: 5rem;
 }
@@ -673,10 +678,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -694,6 +695,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .hover\:underline:hover {
