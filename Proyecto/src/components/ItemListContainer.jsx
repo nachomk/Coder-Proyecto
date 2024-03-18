@@ -46,6 +46,7 @@ const ItemListContainer = () => {
         productsPorCategoria && (
             productsPorCategoria.map((producto) => (
                 <Link key={producto.id} to={`/item/${producto.id}`}>    
+                  <h2>{producto.nombre}</h2>
                 </Link>
         ))
     )
