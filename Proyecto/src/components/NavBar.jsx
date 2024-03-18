@@ -33,10 +33,10 @@ const Navbar = () => {
               { showCategories && (
                 <ul className="absolute bg-white text-xl w-[19%] rounded-lg border border-black border-lg p-4">
                   <li>
-                    <NavLink to="category/1" className="hover:underline ">  Ropa</NavLink>
+                    <NavLink to="category/1" className="hover:underline ">  Remeras</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/category/2" className="hover:underline">  Tickets</NavLink>
+                    <NavLink to="/category/2" className="hover:underline">  Cascos</NavLink>
                   </li>
                   <li>
                     <NavLink to="/category/3" className="hover:underline">

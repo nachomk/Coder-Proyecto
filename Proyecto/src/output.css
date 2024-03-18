@@ -604,10 +604,6 @@ video {
   margin-left: 5rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -626,10 +622,6 @@ video {
 
 .flex-grow {
   flex-grow: 1;
-}
-
-.flex-col {
-  flex-direction: column;
 }
 
 .items-center {
