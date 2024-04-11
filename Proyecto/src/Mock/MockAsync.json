@@ -1,8 +1,9 @@
 {
     "categorias": [
-        {"id": 1, "nombre": "Remeras"},
-        {"id": 2, "nombre": "Cascos"},
-        {"id": 3, "nombre": "Accesorios"}
+        {"id": 1, "nombre": "Remeras", "img" : "https://miniaturemotorworld.com/cdn/shop/files/mercedes-amg-petronas-f1-2023-team-driver-t-shirt-black_ss4_p-13368470_u-y7bp9gojzf0b0a89bhno_v-33e25720ecd246f9b89bc68856d657a0_900x.jpg?v=1690607523"},
+        {"id": 2, "nombre": "Cascos", "img" : "https://cdn-4.motorsport.com/images/amp/68yb5DX0/s1000/formula-1-infographics-2021-ca-3.jpg"},
+        {"id": 3, "nombre": "Accesorios", "img" : "https://m.media-amazon.com/images/I/61SGZQ4CnrS._AC_SL1001_.jpg"},
+        {"id": 4, "nombre": "Tickets", "img" : "https://blog.micasino.com/wp-content/uploads/2024/01/Calendario-Formula-1-2024.jpg.webp"}
 
     ],
     "productos" : [
@@ -10,9 +11,9 @@
             "id": 1,
             "nombre": "Remera Ferrari",
             "descripcion": "Remera Roja de Escuderia Ferrari",
-            "precio": 59,
+            "precio": 59.99,
             "stock": 100,
-            "imagen": "PONER URL",
+            "imagen": "https://http2.mlstatic.com/D_NQ_NP_966618-MLA74485047336_022024-O.webp",
             "categoria": 1
             
         },
@@ -22,7 +23,7 @@
             "descripcion": "Casco de Escuderia Mercedes",
             "precio": 59,
             "stock": 100,
-            "imagen": "PONER URL",
+            "imagen": "https://images.footballfanatics.com/mercedes-amg-petronas-f1-team/mercedes-amg-petronas-f1-2023-george-russell-1:5-model-helmet_ss5_p-14420763+u-agvz0jvxzwipldrshg2l+v-oxkwixyiomstsghsqs4d.jpg?_hv=2",
             "categoria": 2
         },
         {
@@ -31,7 +32,7 @@
             "descripcion": "Llavero de Escuderia RedBull",
             "precio": 59,
             "stock": 100,
-            "imagen": "PONER URL",
+            "imagen": "https://tiendaf1mdsports.cl/wp-content/uploads/2023/08/Llavero_Polera_Redbull_2023_Checo_Perez_2-scaled.jpg",
             "categoria": 3
         },
         {
@@ -40,7 +41,7 @@
             "descripcion": "Casco de Escuderia Aston Martin",
             "precio": 59,
             "stock": 100,
-            "imagen": "PONER URL",
+            "imagen": "https://cdn-5.motorsport.com/images/amp/YN1954V2/s6/formula-1-aston-martin-launch--2.jpg",
             "categoria": 2
         },
         {
@@ -49,7 +50,7 @@
             "descripcion": "Remera Naranja de Escuderia Mclaren",
             "precio": 59,
             "stock": 100,
-            "imagen": "PONER URL",
+            "imagen": "https://images.footballfanatics.com/mclaren-f1-team/mclaren-2024-team-set-up-t-shirt-autumn_ss5_p-201084320+pv-1+u-giz4inieueswfkfmo8uv+v-paeigvetbhep1lzcqjmc.jpg?_hv=2&w=900",
             "categoria": 1
         }
     ]

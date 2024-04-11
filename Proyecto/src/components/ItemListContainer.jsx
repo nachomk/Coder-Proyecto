@@ -34,8 +34,9 @@ const ItemListContainer = () => {
         <div className="flex">
           {response.categorias.map((cat) => {
             return (
-              <Link key={cat.id} to={`/category/${cat.id}`}>
+              <Link key={cat.id} to={`/category/${cat.id}`} >
                 <h2>{cat.nombre}</h2>
+                <img src={cat.img} style={{width: "200px"}} />
               </Link>
             );
           })}

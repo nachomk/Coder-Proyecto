@@ -11,9 +11,9 @@ const ItemDetail = ({item}) => {
         <div className="container flex mx-auto my-auto">
             {item.nombre}
             {item.precio}
-            {item.imagen}
             <ItemCount stock={item.stock} initial={0} onAdd={handleAdd}/>
         </div>
+        <img src={item.imagen} style={{width: "200px"}} />
     </>);
 }
  
