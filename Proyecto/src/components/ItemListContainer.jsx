@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import categories from "../utils/MockAsync.json";
-import { fakeApiCall } from "../utils/fakeApiCall";
+import categories from "../Mock/MockAsync.json";
+import { fakeApiCall } from "../Mock/fakeApiCall";
 
 const ItemListContainer = () => {
   const { id } = useParams();

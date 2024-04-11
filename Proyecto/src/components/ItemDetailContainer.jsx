@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import products from '../utils/MockAsync.json';
+import products from '../Mock/MockAsync.json';
 import  ItemDetail  from "./ItemDetail";
-import { fakeApiCall } from "../utils/fakeApiCall";
+import { fakeApiCall } from "../Mock/fakeApiCall";
 
 const ItemDetailContainer = () => {
     const [productsCharged, setProductsCharged] = useState({})
