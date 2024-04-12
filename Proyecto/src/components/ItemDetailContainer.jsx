@@ -24,10 +24,7 @@ const ItemDetailContainer = () => {
         {
           productsCharged.productos.length > 0 && productsCharged.productos.map((item, index) => {
             return <ItemDetail item={item} />
-          }
-  
-          )
-        }
+          })}
       </div>
   
   

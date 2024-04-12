@@ -15,7 +15,7 @@ const ItemListContainer = () => {
     });
   }, []);
 
-  if (loading) return <h1>Cargando...</h1>;
+  if (loading) return <h1 className="text-3xl font-bold text-center mt-8">Cargando...</h1>;
 
   const getProductosByCategory = (catId) => {
     if (catId) {
@@ -30,20 +30,22 @@ const ItemListContainer = () => {
   return (
     <>
       <div className="">
-        <h1>Categorias</h1>
-        <div className="flex">
+        <h1 className="text-3xl font-bold text-center mt-8">Categorias</h1>
+        <div className="flex justify-around mt-8">
           {response.categorias.map((cat) => {
             return (
-              <Link key={cat.id} to={`/category/${cat.id}`} >
-                <h2>{cat.nombre}</h2>
-                <img src={cat.img} style={{width: "200px"}} />
+              <Link key={cat.id} to={`/category/${cat.id}`} className="block" >
+                <div className="p-4 rounded-lg text-center border border-gray-300" style={{ width:"250px", height:"350px"}}>
+                  <img src={cat.img} style={{width: "200px", height:"200px"}} />
+                  <h2 className="mt-2 text-center">{cat.nombre}</h2>
+                </div>
               </Link>
             );
           })}
         </div>
       </div>
 
-      {
+      {/*
         productsPorCategoria && (
             productsPorCategoria.map((producto) => (
                 <Link key={producto.id} to={`/item/${producto.id}`}>    
@@ -51,7 +53,7 @@ const ItemListContainer = () => {
                 </Link>
         ))
     )
-}
+  */}
     </>
   );
 };

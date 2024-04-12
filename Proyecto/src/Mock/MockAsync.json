@@ -1,7 +1,7 @@
 {
     "categorias": [
         {"id": 1, "nombre": "Remeras", "img" : "https://miniaturemotorworld.com/cdn/shop/files/mercedes-amg-petronas-f1-2023-team-driver-t-shirt-black_ss4_p-13368470_u-y7bp9gojzf0b0a89bhno_v-33e25720ecd246f9b89bc68856d657a0_900x.jpg?v=1690607523"},
-        {"id": 2, "nombre": "Cascos", "img" : "https://cdn-4.motorsport.com/images/amp/68yb5DX0/s1000/formula-1-infographics-2021-ca-3.jpg"},
+        {"id": 2, "nombre": "Cascos", "img" : "https://images.footballfanatics.com/mercedes-amg-petronas-f1-team/mercedes-amg-petronas-f1-2023-george-russell-1:5-model-helmet_ss5_p-14420763+u-agvz0jvxzwipldrshg2l+v-oxkwixyiomstsghsqs4d.jpg?_hv=2"},
         {"id": 3, "nombre": "Accesorios", "img" : "https://m.media-amazon.com/images/I/61SGZQ4CnrS._AC_SL1001_.jpg"},
         {"id": 4, "nombre": "Tickets", "img" : "https://blog.micasino.com/wp-content/uploads/2024/01/Calendario-Formula-1-2024.jpg.webp"}
 
@@ -21,7 +21,7 @@
             "id": 2,
             "nombre": "Casco Mercedes",
             "descripcion": "Casco de Escuderia Mercedes",
-            "precio": 59,
+            "precio": 59.99,
             "stock": 100,
             "imagen": "https://images.footballfanatics.com/mercedes-amg-petronas-f1-team/mercedes-amg-petronas-f1-2023-george-russell-1:5-model-helmet_ss5_p-14420763+u-agvz0jvxzwipldrshg2l+v-oxkwixyiomstsghsqs4d.jpg?_hv=2",
             "categoria": 2
@@ -30,7 +30,7 @@
             "id": 3,
             "nombre": "Llavero RedBull",
             "descripcion": "Llavero de Escuderia RedBull",
-            "precio": 59,
+            "precio": 59.99,
             "stock": 100,
             "imagen": "https://tiendaf1mdsports.cl/wp-content/uploads/2023/08/Llavero_Polera_Redbull_2023_Checo_Perez_2-scaled.jpg",
             "categoria": 3
@@ -39,16 +39,25 @@
             "id": 4,
             "nombre": "Casco Aston Martin",
             "descripcion": "Casco de Escuderia Aston Martin",
-            "precio": 59,
+            "precio": 59.99,
             "stock": 100,
             "imagen": "https://cdn-5.motorsport.com/images/amp/YN1954V2/s6/formula-1-aston-martin-launch--2.jpg",
             "categoria": 2
         },
         {
             "id": 5,
+            "nombre": "Tickets Circuito Monaco",
+            "descripcion": "Entradas para el circuito de Monaco",
+            "precio": 359.99,
+            "stock": 100,
+            "imagen": "https://lebalap.academy/wp-content/uploads/2021/02/esquema-circuito-de-monaco.png",
+            "categoria": 4
+        },
+        {
+            "id": 6,
             "nombre": "Remera Mclaren",
             "descripcion": "Remera Naranja de Escuderia Mclaren",
-            "precio": 59,
+            "precio": 59.99,
             "stock": 100,
             "imagen": "https://images.footballfanatics.com/mclaren-f1-team/mclaren-2024-team-set-up-t-shirt-autumn_ss5_p-201084320+pv-1+u-giz4inieueswfkfmo8uv+v-paeigvetbhep1lzcqjmc.jpg?_hv=2&w=900",
             "categoria": 1
