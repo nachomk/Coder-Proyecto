@@ -34,7 +34,7 @@ const ItemListContainer = () => {
         <div className="flex justify-around mt-12">
           {response.categorias.map((cat) => {
             return (
-              <Link key={cat.id} to={`/category/${cat.id}`} className="block" >
+              <Link key={cat.id} to={`/item/${cat.id}`} className="block" >
                 <div className="p-4 rounded-lg text-center border border-gray-300 hover:border-blue-500 hover:shadow-lg hover:transform hover:scale-105 transition duration-300 ease-in-out" style={{ width:"250px", height:"350px"}}>
                   <img src={cat.img} style={{width: "200px", height:"200px"}} />
                   <h2 className="mt-5 text-center text-2xl">{cat.nombre}</h2>
