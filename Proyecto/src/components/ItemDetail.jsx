@@ -21,7 +21,7 @@ const ItemDetail = ({ item }) => {
               />
               <h2 className="text-xl">{item.nombre}</h2>
               <p className="text-gray-600">{item.precio}</p>
-              <ItemCount stock={item.stock} initial={0} onAdd={handleAdd} />
+              <ItemCount stock={item.stock} initial={0} onAdd={(quantity) => console.log('Cantidad agregada ', quantity)} />
             </Link>
           </div>
         </div>
