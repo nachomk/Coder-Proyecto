@@ -12,8 +12,9 @@ const ItemDetail = ({item}) => {
             {item.nombre}
             {item.precio}
             <ItemCount stock={item.stock} initial={0} onAdd={handleAdd}/>
+            <img src={item.imagen} style={{width: "200px"}} />
         </div>
-        <img src={item.imagen} style={{width: "200px"}} />
+        
     </>);
 }
  

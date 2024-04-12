@@ -1,6 +1,6 @@
 {
     "categorias": [
-        {"id": 1, "nombre": "Remeras", "img" : "https://miniaturemotorworld.com/cdn/shop/files/mercedes-amg-petronas-f1-2023-team-driver-t-shirt-black_ss4_p-13368470_u-y7bp9gojzf0b0a89bhno_v-33e25720ecd246f9b89bc68856d657a0_900x.jpg?v=1690607523"},
+        {"id": 1, "nombre": "Remeras", "img" : "https://images.footballfanatics.com/scuderia-ferrari/scuderia-ferrari-2023-team-shirt_ss4_p-13368460+u-ege5w56cswq8f2mjky8c+v-c20539672ac544aaab406284c92d1c9e.jpg?_hv=2&w=340"},
         {"id": 2, "nombre": "Cascos", "img" : "https://images.footballfanatics.com/mercedes-amg-petronas-f1-team/mercedes-amg-petronas-f1-2023-george-russell-1:5-model-helmet_ss5_p-14420763+u-agvz0jvxzwipldrshg2l+v-oxkwixyiomstsghsqs4d.jpg?_hv=2"},
         {"id": 3, "nombre": "Accesorios", "img" : "https://m.media-amazon.com/images/I/61SGZQ4CnrS._AC_SL1001_.jpg"},
         {"id": 4, "nombre": "Tickets", "img" : "https://blog.micasino.com/wp-content/uploads/2024/01/Calendario-Formula-1-2024.jpg.webp"}

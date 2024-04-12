@@ -16,7 +16,7 @@ const ItemDetailContainer = () => {
   
     }, [])
   
-    if (loading) return <h1> Loading... </h1>
+    if (loading) return <h1 className="text-3xl font-bold text-center mt-8"> Cargando productos... </h1>
   
   
     return (<>

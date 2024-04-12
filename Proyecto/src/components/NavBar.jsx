@@ -43,12 +43,17 @@ const Navbar = () => {
                        Regalos/Accesorios
                     </NavLink>
                   </li>
+                  <li>
+                    <NavLink to="/category/4" className="hover:underline">
+                       Tickets
+                    </NavLink>
+                  </li>
                 </ul>
               )}
             </li>
 
             <li>
-              <NavLink to="/category/4" className="text-white text-xl hover:underline font-bold">Calendario</NavLink>
+              <NavLink to="/category/6" className="text-white text-xl hover:underline font-bold">Calendario</NavLink>
             </li>
             <li>
               <NavLink to="/category/5" className="text-white text-xl hover:underline font-bold">Contacto</NavLink>
