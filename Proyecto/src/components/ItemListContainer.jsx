@@ -32,28 +32,20 @@ const ItemListContainer = () => {
       <div className="">
         <h1 className="text-3xl font-bold text-center mt-8">Categorias</h1>
         <div className="flex justify-around mt-12">
-          {response.categorias.map((cat) => {
+          {response.categorias.map((categoria) => {
             return (
-              <Link key={cat.id} to={`/item/${cat.id}`} className="block" >
-                <div className="p-4 rounded-lg text-center border border-gray-300 hover:border-blue-500 hover:shadow-lg hover:transform hover:scale-105 transition duration-300 ease-in-out" style={{ width:"250px", height:"350px"}}>
-                  <img src={cat.img} style={{width: "200px", height:"200px"}} />
-                  <h2 className="mt-5 text-center text-2xl">{cat.nombre}</h2>
+              <Link key={categoria.id} to={`/item/${categoria.id}`} className="" >
+                <div className="flex flex-wrap justify-center">
+                  <div className="p-4 rounded-lg text-center border border-gray-300 hover:border-blue-500 hover:shadow-lg hover:transform hover:scale-105 transition duration-300 ease-in-out" style={{ width:"250px", height:"350px"}}>
+                    <img src={categoria.img} style={{width: "200px", height:"200px"}} />
+                    <h2 className="mt-5 text-center text-2xl">{categoria.nombre}</h2>
+                  </div>
                 </div>
               </Link>
             );
           })}
         </div>
       </div>
-
-      {/*
-        productsPorCategoria && (
-            productsPorCategoria.map((producto) => (
-                <Link key={producto.id} to={`/item/${producto.id}`}>    
-                  <h2>{producto.nombre}</h2>
-                </Link>
-        ))
-    )
-  */}
     </>
   );
 };

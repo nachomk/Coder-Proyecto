@@ -17,14 +17,12 @@ const ItemDetailContainer = () => {
     if (loading) return <h1 className="text-3xl font-bold text-center mt-8"> Cargando productos... </h1>
   
     return (<>
-      <div>
+      <div className="flex justify-around mt-12">
         {
           productsCharged.productos.length > 0 && productsCharged.productos.map((item, index) => {
             return <ItemDetail item={item} />
           })}
       </div>
-  
-  
     </>);
   }
   
