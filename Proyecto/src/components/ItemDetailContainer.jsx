@@ -17,7 +17,7 @@ const ItemDetailContainer = () => {
     if (loading) return <h1 className="text-3xl font-bold text-center mt-8"> Cargando productos... </h1>
   
     return (<>
-      <div className="flex justify-around mt-12">
+      <div className="grid gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap- mt-12 justify-center">
         {
           productsCharged.productos.length > 0 && productsCharged.productos.map((item, index) => {
             return <ItemDetail item={item} />

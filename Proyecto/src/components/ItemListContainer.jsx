@@ -36,7 +36,7 @@ const ItemListContainer = () => {
             return (
               <Link key={categoria.id} to={`/item/${categoria.id}`} className="" >
                 <div className="flex flex-wrap justify-center">
-                  <div className="p-4 rounded-lg text-center border border-gray-300 hover:border-blue-500 hover:shadow-lg hover:transform hover:scale-105 transition duration-300 ease-in-out" style={{ width:"250px", height:"350px"}}>
+                  <div className=" p-4 rounded-lg text-center border border-gray-300 hover:border-blue-500 hover:shadow-lg hover:transform hover:scale-105 transition duration-300 ease-in-out" style={{ width:"250px", height:"350px"}}>
                     <img src={categoria.img} style={{width: "200px", height:"200px"}} />
                     <h2 className="mt-5 text-center text-2xl">{categoria.nombre}</h2>
                   </div>

@@ -23,7 +23,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     <button onClick={() => handleQuantityChange(+1)}>
       +
     </button>
-    <h4>{quantity}</h4>
+    <p>{quantity}</p>
     <button onClick={() => handleAdd(quantity)} disabled={!stock}>
       Agregar al carrito
     </button>
