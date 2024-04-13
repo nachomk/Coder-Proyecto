@@ -4,7 +4,6 @@ import categories from "../Mock/MockAsync.json";
 import { fakeApiCall } from "../Mock/fakeApiCall";
 
 const ItemListContainer = () => {
-  const { id } = useParams();
   const [response, setResponse] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -15,17 +14,7 @@ const ItemListContainer = () => {
     });
   }, []);
 
-  if (loading) return <h1 className="text-3xl font-bold text-center mt-8">Cargando...</h1>;
-
-  const getProductosByCategory = (catId) => {
-    if (catId) {
-      return response.productos.filter(
-        (product) => product.categoria === parseInt(catId)
-      );
-    }
-  };
-
-  const productsPorCategoria = getProductosByCategory(id);
+  if (loading) return <h1 className="text-3xl font-bold text-center mt-8">Cargando categorias...</h1>;
 
   return (
     <>

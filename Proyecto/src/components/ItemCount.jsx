@@ -9,25 +9,34 @@ const ItemCount = ({ stock, initial, onAdd }) => {
       setQuantity(newQuantity)
     }
   }
-
+  
+  const resetQuantity = () => {
+    setQuantity(0);
+  }
   const handleAdd = () => {
     if (quantity > 0) {
       onAdd(quantity)
     }
   }
 
-  return (<div>
-    <button onClick={() => handleQuantityChange(-1)}>
+  return (<div class="flex flex-col items-center">
+  <div class="flex items-center">
+    <button class="mr-2" onClick={() => handleQuantityChange(-1)}>
       -
     </button>
+    <p class="mr-2">{quantity}</p>
     <button onClick={() => handleQuantityChange(+1)}>
       +
     </button>
-    <p>{quantity}</p>
-    <button onClick={() => handleAdd(quantity)} disabled={!stock}>
-      Agregar al carrito
-    </button>
-  </div>);
+  </div>
+  <button onClick={() => resetQuantity(quantity)}>
+    Reset
+  </button>
+  <button class="mt-2" onClick={() => handleAdd(quantity)} disabled={!stock}>
+    Agregar al carrito
+  </button>
+</div>
+);
 }
 
 export default ItemCount;

@@ -8,7 +8,7 @@ const ItemDetail = ({ item }) => {
     console.log("Agregado al carrito");
   };
   const hola = useContext(CartContext);
-  console.log(hola)
+  //console.log(hola)
 
   return (
     <>
@@ -18,7 +18,7 @@ const ItemDetail = ({ item }) => {
                 <img
                   src={item.imagen}
                   style={{ width: "200px", height: "200px" }}
-                  className="mx-auto"
+                  className="mx-auto mt-3"
                 />
                 <h2 className="text-center mt-3 text-xl">{item.nombre}</h2>
                 <p className="text-gray-600 text-center text-xl">{item.precio}</p>
