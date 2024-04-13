@@ -3,7 +3,7 @@ import Navbar from './components/NavBar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ItemListContainer from './components/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer'
-import { CartContext } from './context/CartContext'
+import { CartContext, CartProvider } from './context/CartContext'
 
 function App() {
   const hola = 'hola'
@@ -11,6 +11,7 @@ function App() {
   const [count, setCount] = useState(0)
   return (
     <>
+    <CartProvider>
       <Router>
         <Navbar/>
         <Routes>
@@ -25,6 +26,7 @@ function App() {
           */}
         </Routes>
       </Router>
+    </CartProvider>
 
     
 

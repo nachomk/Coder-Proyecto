@@ -20,12 +20,12 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   }
 
   return (
-  <div class="flex flex-col items-center">
-    <div class="flex items-center">
-      <button class="mr-2 bg-gray-200 px-5 py-1 rounded-lg" onClick={() => handleQuantityChange(-1)}>
+  <div className="flex flex-col items-center">
+    <div className="flex items-center">
+      <button className="mr-2 bg-gray-200 px-5 py-1 rounded-lg" onClick={() => handleQuantityChange(-1)}>
         -
       </button>
-      <p class=" bg-gray-100 mr-2 my-2 px-5">{quantity}</p>
+      <p className=" bg-gray-100 mr-2 my-2 px-5">{quantity}</p>
       <button onClick={() => handleQuantityChange(+1)} className="bg-gray-200 px-5 py-1 rounded-lg">
         +
       </button>
@@ -33,7 +33,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     <button onClick={() => resetQuantity(quantity)} className=" bg-gray-200 px-5 my-4 rounded-lg">
       Reset
     </button>
-    <button class="mt-2 bg-gray-200 px-5 py-2 rounded-lg" onClick={() => handleAdd(quantity)} disabled={!stock}>
+    <button className="mt-2 bg-gray-200 px-5 py-2 rounded-lg" onClick={() => handleAdd(quantity)} disabled={!stock}>
       Agregar al carrito
     </button>
 </div>
