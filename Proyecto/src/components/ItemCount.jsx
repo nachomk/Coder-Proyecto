@@ -25,7 +25,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
       <button class="mr-2 bg-gray-200 px-5 py-1 rounded-lg" onClick={() => handleQuantityChange(-1)}>
         -
       </button>
-      <p class="mr-2 my-2 px-5">{quantity}</p>
+      <p class=" bg-gray-100 mr-2 my-2 px-5">{quantity}</p>
       <button onClick={() => handleQuantityChange(+1)} className="bg-gray-200 px-5 py-1 rounded-lg">
         +
       </button>

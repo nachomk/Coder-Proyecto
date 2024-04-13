@@ -11,7 +11,6 @@ function App() {
   const [count, setCount] = useState(0)
   return (
     <>
-    <CartContext.Provider value={{ hola }}>
       <Router>
         <Navbar/>
         <Routes>
@@ -26,7 +25,6 @@ function App() {
           */}
         </Routes>
       </Router>
-    </CartContext.Provider>
 
     
 
