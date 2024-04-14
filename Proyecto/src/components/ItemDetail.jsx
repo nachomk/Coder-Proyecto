@@ -4,7 +4,7 @@ import { CartContext } from "../context/CartContext";
 import { Link } from "react-router-dom";
 
 export const ItemDetail = ({ item }) => {
-  const { addToCart, cart } = useContext(CartContext);
+  const { addToCart } = useContext(CartContext);
   
   
   const onAdd = (quantity, item) => {

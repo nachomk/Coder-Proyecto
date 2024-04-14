@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CartWidget from "./CartWidget";
 import LogoWidget from "./LogoWidget";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [showCategories, setShowCategories] = useState(false);
-
+  
   return (
     <nav className="bg-red-700 py-4">      
       <div className="container mx-auto flex justify-between items-center">    
          
-        <div className="flex items-center relative right-12">
+        <Link className="flex items-center relative right-12" to="/">
           <LogoWidget/>
           <div className="text-white text-5xl font-bold">Argentina</div>
-        </div>
+        </Link>
 
         <div className="flex items-center flex-grow ">
           <form className="bg-white p-2 h-[20%] w-full rounded-lg">

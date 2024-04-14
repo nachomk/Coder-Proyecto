@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ItemCount = ({ stock, initial, onAdd }) => {
+const ItemCount = ({ stock, initial, onAdd, item }) => {
   const [quantity, setQuantity] = useState(initial)
 
   const handleQuantityChange = (value) => {
@@ -15,7 +15,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   }
   const handleAdd = () => {
     if (quantity > 0) {
-      onAdd(quantity)
+      onAdd(quantity, item)
     }
   }
 
