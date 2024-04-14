@@ -8,17 +8,10 @@ export const CartProvider = ({ children }) => {
         item: null
     }]);
 
-    const addToCart = (quantity, item) => {
-        console.log(quantity, item)
-        if(cart.length > 0) {
-        setCart(...cart, {quantity, item})
-    } else {
-        setCart(quantity, item)
-    }}
-
-    return (
-        <CartContext.Provider value={{ addToCart, cart }}>
-           {children} 
-        </CartContext.Provider>
-    )
-}
+return (
+    <>
+    <CartProvider value={{ cart, setCart}}>
+        {children}
+    </CartProvider>
+    </>
+)}

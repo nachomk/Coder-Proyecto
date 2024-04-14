@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import categories from "../Mock/MockAsync.json";
 import { fakeApiCall } from "../Mock/fakeApiCall";
 
