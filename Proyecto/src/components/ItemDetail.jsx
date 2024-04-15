@@ -2,6 +2,8 @@ import { useContext } from "react";
 import ItemCount from "./ItemCount";
 import { CartContext } from "../context/CartContext";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 export const ItemDetail = ({ item }) => {
   const { addItem, removeItem } = useContext(CartContext);
@@ -9,12 +11,12 @@ export const ItemDetail = ({ item }) => {
   
   const onAdd = (quantity) => {
     addItem(item, quantity)
-    alert('El item se ha agregado correctamente')
+    toast('El item se ha agregado correctamente')
   };
 
   const onRemove = (quantity) => {
     removeItem(item.id, quantity)
-    alert('El item se ha eliminado correctamente')
+    toast('El item se ha eliminado correctamente')
   }
   
 

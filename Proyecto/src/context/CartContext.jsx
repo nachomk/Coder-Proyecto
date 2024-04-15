@@ -10,6 +10,8 @@ export const CartProvider = ({ children }) => {
             const updatedCart = cart.map((cartItem) => {
                 if(cartItem.item.id === item.id) {
                     return {...cartItem, quantity: cartItem.quantity + quantity}
+                } else {
+                    return cartItem
                 }
             })
             setCart(updatedCart);
