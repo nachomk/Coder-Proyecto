@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import productos from '../Mock/Categorias.json'
 import { fakeApiCall } from "../Mock/fakeApiCall";
-import { doc, getDoc, getFirestore } from 'firebase/firestore'
+import { collection, getDocs, getFirestore } from 'firebase/firestore'
 
 const ItemListContainer = () => {
   const { id }= useParams()
@@ -16,12 +16,11 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     const db = getFirestore();
-    const prodRef = doc(db,'productos', 'k9HxAHqxKxxyU33zhkSl')
-    getDoc(prodRef).then((snapshot) => {
-      if(snapshot.exists()){
-        console.log({ ...snapshot.data() })
-      }
+    const prodRef = collection(db,'remeras')
+    getDocs(prodRef).then((snapshot) => {
+      snapshot.docs.map((item) => console.log({...item.data()}))
     })
+
   },[])
 
   const getProductosByCategoria = (categoriaId) => {
