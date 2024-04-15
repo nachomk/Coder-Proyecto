@@ -23,7 +23,7 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore();
 
 productos.forEach((prod) => {
-  addDoc(collection, (db,'productos'), prod)
+  addDoc(collection(db,'productos'), prod)
   .then((docRef) => {
     console.log('Doc agregado con id: ', docRef.id)
   })
