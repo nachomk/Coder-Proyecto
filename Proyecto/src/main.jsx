@@ -23,7 +23,7 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore();
 
 
-categorias.map((prod) => {
+/*categorias.map((prod) => {
   addDoc(collection(db,'categorias'), prod)
   .then((docRef) => {
     console.log('Doc agregado con id: ', docRef.id)
@@ -32,6 +32,26 @@ categorias.map((prod) => {
     console.error('Error al agregar el doc', error)
   })
 })
+
+if (id) {
+
+  const getProduct =query(collection(db, 'productos'), where('id', "==", parseInt(id)))
+  
+  getDocs(getProduct).then((snapshot)=> {
+  
+  if (snapshot.size ===0) {
+  
+  console.log('No hay categorias')
+  
+          }
+  
+  setProducts(snapshot.docs.map((doc)=> ({ id: doc.id, ...doc.data() })))
+  
+  setLoading(false)
+  
+        })
+  
+      }*/
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

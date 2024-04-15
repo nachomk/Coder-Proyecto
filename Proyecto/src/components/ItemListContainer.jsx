@@ -16,7 +16,7 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     const db = getFirestore();
-    const prodRef = collection(db,'remeras')
+    const prodRef = collection(db,'categorias')
     getDocs(prodRef).then((snapshot) => {
       snapshot.docs.map((item) => console.log({...item.data()}))
     })
@@ -62,9 +62,7 @@ const ItemListContainer = () => {
           ))}
         </div>
           </>
-        )
-
-        }
+        )}
       </div>
     </>
   );
