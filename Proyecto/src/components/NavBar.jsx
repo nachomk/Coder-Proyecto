@@ -53,10 +53,10 @@ const Navbar = () => {
             </li>
 
             <li>
-              <NavLink to="/category/6" className="text-white text-xl hover:underline font-bold">Calendario</NavLink>
+              <NavLink  className="text-white text-xl hover:underline font-bold">Calendario</NavLink>
             </li>
             <li>
-              <NavLink to="/category/5" className="text-white text-xl hover:underline font-bold">Contacto</NavLink>
+              <NavLink  className="text-white text-xl hover:underline font-bold">Contacto</NavLink>
             </li>
             <li>
               <button className="text-white text-xl ">
