@@ -4,13 +4,18 @@ import { CartContext } from "../context/CartContext";
 import { Link } from "react-router-dom";
 
 export const ItemDetail = ({ item }) => {
-  const { addToCart } = useContext(CartContext);
+  const { addItem, removeItem } = useContext(CartContext);
+
   
-  
-  const onAdd = (quantity, item) => {
-    addToCart({quantity: quantity , item})
+  const onAdd = (quantity) => {
+    addItem(item, quantity)
+    alert('El item se ha agregado correctamente')
   };
 
+  const onRemove = (quantity) => {
+    removeItem(item.id, quantity)
+    alert('El item se ha eliminado correctamente')
+  }
   
 
   return (
@@ -25,7 +30,7 @@ export const ItemDetail = ({ item }) => {
                 />
                 <h2 className="text-center mt-3 text-xl">{item.nombre}</h2>
                 <p className="text-gray-600 text-center text-xl">{item.precio}</p>
-                <ItemCount stock={item.stock} initial={0} onAdd={onAdd} item={item}/>
+                <ItemCount stock={item.stock} initial={0} onAdd={onAdd} item={item} onRemove={onRemove}/>
             </Link>
       </div>
     

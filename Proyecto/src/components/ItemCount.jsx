@@ -8,6 +8,12 @@ const ItemCount = ({ stock, initial, onAdd, item }) => {
     if (newQuantity >= 1 && newQuantity <= stock) {
       setQuantity(newQuantity)
     }
+    if (value === 1) {
+      onAdd(count)
+    }
+    if (value === -1) {
+      onRemove(1)
+    }
   }
   
   const resetQuantity = () => {
