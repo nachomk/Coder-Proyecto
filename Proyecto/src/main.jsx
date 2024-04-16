@@ -23,17 +23,17 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore();
 
 
-/*categorias.map((prod) => {
-  addDoc(collection(db,'categorias'), prod)
+/*productos.productos.forEach((prod) => {
+  addDoc(collection(db,'productos'), prod)
   .then((docRef) => {
     console.log('Doc agregado con id: ', docRef.id)
   })
   .catch((error) => {
     console.error('Error al agregar el doc', error)
   })
-})
+})*/
 
-if (id) {
+/*if (id) {
 
   const getProduct =query(collection(db, 'productos'), where('id', "==", parseInt(id)))
   
