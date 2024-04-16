@@ -1,41 +1,43 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import productos from '../Mock/Categorias.json'
+import productos from '../Mock/MockAsync.json'
 import { fakeApiCall } from "../Mock/fakeApiCall";
-import { collection, doc, getDocs, getFirestore, where } from 'firebase/firestore'
-import ItemDetail from "./ItemDetail";
+import { collection, doc, getDocs, getFirestore, where, query } from 'firebase/firestore'
 
 const ItemListContainer = () => {
-  const { id }= useParams()
+  const { id }= useParams();  
   const [response, setResponse] = useState([]);
   const [loading, setLoading] = useState(true);
   const [categoria, setCategoria] = useState([])
-  
-
+  const [responseProducto, setResponseProducto] = useState([])
+  console.log(id)
   useEffect(() => {
     const db = getFirestore();
-    const prodRef = collection(db,'categorias')
-    getDocs(prodRef).then((snapshot) => {
-      setCategoria(snapshot.docs.map((item) => ({id:item.id , ...item.data()}), setLoading(false))
-      
-    )
+    const getItemsByDoc = collection(db,'categorias')
+    getDocs(getItemsByDoc).then((snapshot) => {
+      if (snapshot.size === 0) {
+        console.log('no results')
+      }
+      setCategoria(snapshot.docs.map((doc) => ({id:doc.id , ...doc.data()})))
+      setLoading(false)
     })
 
   },[])
 
   useEffect(() => {
-    setLoading(true)
-    if (id) {
-      const getProducts = query(collection(db, 'productos'), where('id','==',parseInt(id)))
-      getDocs(getProducts).then(snapshot => { if(snapshot.size === 0) {console.log('No hay categorias')}
-      setResponse(snapshot.docs.map(doc => ({id:doc.id , ...doc.data()})))
-      setLoading(false)
+    const db = getFirestore();
+      const getProductsByCat = query(collection(db, 'productos'), where('categorias','==',parseInt(id)))
+      getDocs(getProductsByCat).then((snapshot) => { 
+      if(snapshot.size === 0) {
+        console.log('No hay productos')
+      }
+      setResponseProducto(snapshot.docs.map((doc) => ({id:doc.id , ...doc.data()})))
     })
-
-    }
   },[id])
 
-  console.log(response)
+  console.log(id)
+
+
   if (loading) return <h1 className="text-3xl font-bold text-center mt-8">Cargando categorias...</h1>;
 
   return (
@@ -54,11 +56,24 @@ const ItemListContainer = () => {
               </Link>
           ))}
         </div>
-      {
+        {/*
+          responseProducto && (
+            <><h2 className="">{responseProducto.length > 0 ? 'Productos de la categoria': 'No hay productos'}</h2>
+            {responseProducto.map(producto => (
+              <Link key={producto.id} to={`/item/${producto.id}`}>
+                <div key={producto.id}>
+                  <h3>{producto.nombre}</h3>
+                </div>
+              </Link>
+            ))}
+            </>
+          )
+        */}
+      {/*
         id && response.map((item, index) => {
           return <ItemDetail key={index} item={item}/>
         })
-      }
+      */}
     </div>
     
     </>

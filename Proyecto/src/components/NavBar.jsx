@@ -2,9 +2,23 @@ import React, { useEffect, useState } from "react";
 import CartWidget from "./CartWidget";
 import LogoWidget from "./LogoWidget";
 import { Link, NavLink } from "react-router-dom";
+import { collection, doc, getDocs, getFirestore, where, query } from 'firebase/firestore'
+
 
 const Navbar = () => {
   const [showCategories, setShowCategories] = useState(false);
+  /*const [categories, setCategories] = useState([])
+
+  useEffect(() => {
+    const db = getFirestore();
+    const getItemsByDoc = collection(db,'categorias')
+    getDocs(getItemsByDoc).then((snapshot) => {
+      if (snapshot.size === 0) {
+        console.log('no results')
+      }
+      setCategories(snapshot.docs.map((doc) => ({id:doc.id , ...doc.data()})))
+    })
+  },[])*/
   
   return (
     <nav className="bg-red-700 py-4">      

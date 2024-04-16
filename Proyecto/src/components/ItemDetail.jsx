@@ -2,7 +2,7 @@ import { useContext } from "react";
 import ItemCount from "./ItemCount";
 import { CartContext } from "../context/CartContext";
 import { Link } from "react-router-dom";
-import { ToastContainer, toast } from 'react-toastify'
+import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 export const ItemDetail = ({ item }) => {
@@ -31,8 +31,8 @@ export const ItemDetail = ({ item }) => {
                   className="mx-auto mt-3"
                 />
                 <h2 className="text-center mt-7 text-xl">{item.nombre}</h2>
-                {/*<p className="text-gray-600 text-center text-xl">{item.precio}</p>
-                <ItemCount stock={item.stock} initial={0} onAdd={onAdd} item={item} onRemove={onRemove}/>*/}
+                <p className="text-gray-600 text-center text-xl">{item.precio}</p>
+                <ItemCount stock={item.stock} initial={0} onAdd={onAdd} item={item} onRemove={onRemove}/>
             </Link>
       </div>
     
