@@ -23,7 +23,7 @@ export const ItemDetail = ({ item }) => {
   return (
     <>
     
-      <div style={{width: "320px", height: "320px"}} className="mx-auto border border-gray-300 rounded-lg hover:border-blue-500 hover:shadow-lg hover:transform hover:scale-105 transition duration-300 ease-in-out">
+      <div style={{width: "320px", height: "450px"}} className="mx-auto border border-gray-300 rounded-lg hover:border-blue-500 hover:shadow-lg hover:transform hover:scale-105 transition duration-300 ease-in-out">
             <Link>
                 <img
                   src={item.imagen}
