@@ -11,7 +11,7 @@ export const ItemDetail = ({ item }) => {
   
   const onAdd = (quantity) => {
     addItem(item, quantity)
-    toast('El item se ha agregado correctamente')
+    toast('El item se ha agregado correctamente, para finalizar la compra dirijase al carrito')
   };
 
   const onRemove = (quantity) => {
@@ -31,7 +31,7 @@ export const ItemDetail = ({ item }) => {
                   className="mx-auto mt-3"
                 />
                 <h2 className="text-center mt-7 text-xl">{item.nombre}</h2>
-                <p className="text-gray-600 text-center text-xl">{item.precio}</p>
+                <p className="text-gray-600 text-center text-xl">${item.precio}</p>
                 <ItemCount stock={item.stock} initial={0} onAdd={onAdd} item={item} onRemove={onRemove}/>
             </Link>
       </div>
