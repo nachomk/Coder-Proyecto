@@ -11,7 +11,7 @@ const Checkout = () => {
     const createOrder = async ({ name, phone, email}) => {
         setLoading(true)
 
-        try {
+        /*try {
             const objOrder = {
                 buyer: {
                     name, phone, email
@@ -23,7 +23,7 @@ const Checkout = () => {
             const batch = writeBatch(db)
 
             const outOfStock = []
-        }
+        }*/
     }
 
     if (loading) {
@@ -42,4 +42,4 @@ const Checkout = () => {
     )
 }
 
-import default Checkout
+export default Checkout
