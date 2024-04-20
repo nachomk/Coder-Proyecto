@@ -1,3 +1,13 @@
 {
-    "rewrites" : [{"source": "/(.*)", "destination":"/"}]
-}
+    "name": "proyecto-coder",
+    "build": {
+      "env": {
+        "API_KEY": "AIzaSyD-sEUxQlcFHmjsEIPcb6TMv_DGVed4eU0"
+      }
+    },
+    "routes": [
+      { "src": "/api/(.*)", "dest": "/api/$1" },
+      { "src": "/(.*)", "dest": "/" }
+    ]
+  }
+  
