@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CartWidget from "./CartWidget";
+import CartWidget from "./Cart";
 import LogoWidget from "./LogoWidget";
 import { Link, NavLink } from "react-router-dom";
 import { collection, doc, getDocs, getFirestore, where, query } from 'firebase/firestore'
