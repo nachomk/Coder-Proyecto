@@ -4,7 +4,7 @@ import ItemListContainer from './components/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer'
 import { CartProvider } from './context/CartContext'
 import { ToastContainer } from 'react-toastify'
-
+import Footer from './components/Footer'
 function App() {
   return (
     <>
@@ -33,6 +33,7 @@ function App() {
         </Routes>
       </Router>
     </CartProvider>
+    <Footer/>
     </>
   )
 }
