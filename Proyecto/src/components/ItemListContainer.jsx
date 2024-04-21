@@ -7,7 +7,6 @@ import ItemDetailContainer from "./ItemDetailContainer";
 
 const ItemListContainer = () => {
   const { categoryId }= useParams();  
-  console.log(categoryId)
   const [response, setResponse] = useState([]);
   const [loading, setLoading] = useState(true);
   const [categoria, setCategoria] = useState([])
