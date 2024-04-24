@@ -33,7 +33,7 @@ function App() {
         </Routes>
       </Router>
     </CartProvider>
-    <Footer/>
+    {/*<Footer/>*/}
     </>
   )
 }

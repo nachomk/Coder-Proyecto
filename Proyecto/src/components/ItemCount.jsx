@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useCart } from '../hooks/useCart'
 
 const ItemCount = ({ stock, initial, onAdd, item , onRemove}) => {
   const [quantity, setQuantity] = useState(initial)
   const [count, setCount] = useState(initial);
+  const { addToCart } = useCart()
 
   const handleQuantityChange = (value) => {
     const newQuantity = quantity + value;
