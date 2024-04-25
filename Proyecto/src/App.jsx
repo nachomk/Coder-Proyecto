@@ -4,7 +4,8 @@ import ItemListContainer from './components/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer'
 import { CartProvider } from './context/CartContext'
 import { ToastContainer } from 'react-toastify'
-import Footer from './components/Footer'
+//import Footer from './components/Footer'
+//import '../src/App.css'
 function App() {
   return (
     <>
