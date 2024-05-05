@@ -3,34 +3,34 @@ import { createContext, useState } from "react";
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState([])
 
   const addItem = (item, quantity) => {
     if (isInCart(item.id)) {
         const updatedCart = cart.map((cartItem) => {
             if (cartItem.item.id === item.id) {
-                return { ...cartItem, quantity: cartItem.quantity + quantity };
+                return { ...cartItem, quantity: cartItem.quantity + quantity }
             } else {
-                return cartItem;
+                return cartItem
             }
-        });
-        setCart(updatedCart);
+        })
+        setCart(updatedCart)
     } else {
-        setCart([...cart, { item, quantity }]);
+        setCart([...cart, { item, quantity }])
     }
-};
+}
 
 
 
   const getTotal = () => {
-    console.log('Calculando total para el carrito:', cart);
+    console.log('Calculando total para el carrito:', cart)
     return cart.reduce((acc, cartItem) => {
-        const precio = Number(cartItem.item.precio);
-        const cantidad = Number(cartItem.quantity); // Asegúrate de usar 'quantity' y no 'cantidad'
-        console.log(`Precio: ${precio}, Cantidad: ${cantidad}, Subtotal: ${precio * cantidad}`);
-        return acc + precio * cantidad;
-    }, 0);
-};
+        const precio = Number(cartItem.item.precio)
+        const cantidad = Number(cartItem.quantity) 
+        console.log(`Precio: ${precio}, Cantidad: ${cantidad}, Subtotal: ${precio * cantidad}`)
+        return acc + precio * cantidad
+    }, 0)
+}
 
 
 
@@ -38,26 +38,26 @@ export const CartProvider = ({ children }) => {
     const updatedCart = cart
       .map((cartItem) => {
         if (cartItem.item.id === itemId) {
-          const newQuantity = cartItem.quantity - quantityToRemove;
-          return { ...cartItem, quantity: newQuantity };
+          const newQuantity = cartItem.quantity - quantityToRemove
+          return { ...cartItem, quantity: newQuantity }
         }
-        return cartItem;
+        return cartItem
       })
-      .filter((cartItem) => cartItem.quantity > 0);
+      .filter((cartItem) => cartItem.quantity > 0)
 
-    setCart(updatedCart);
-  };
+    setCart(updatedCart)
+  }
 
   const clear = () => {
-    setCart([]);
-  };
+    setCart([])
+  }
 
   const isInCart = (id) => {
-    return cart.some((itemCart) => itemCart.item.id === id);
-  };
+    return cart.some((itemCart) => itemCart.item.id === id)
+  }
 
-  console.log(cart);
-  console.log(getTotal());
+  console.log(cart)
+  console.log(getTotal())
 
   return (
     <>
@@ -67,5 +67,5 @@ export const CartProvider = ({ children }) => {
         {children}
       </CartContext.Provider>
     </>
-  );
-};
+  )
+}
