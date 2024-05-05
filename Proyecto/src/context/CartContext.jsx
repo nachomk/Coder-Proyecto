@@ -1,37 +1,3 @@
-{/*import { createContext, useState } from "react";
-
-export const CartContext = createContext();
-export function CartProvider({ children })*/} {/*
-  const [cart, setCart] = useState([]);
-
-  const addToCart = (product) => {
-    const productInCartIndex = cart.findIndex(item => item.id === product.id)
-
-    if (productInCartIndex >= 0) {
-        const newCart = structuredClone(cart)
-        newCart[productInCartIndex].quantity += 1
-        setCart(newCart)
-    }
-
-    setCart(prevState => ([
-        ...prevState,
-        {
-            ...product,
-            quantity: 1
-        }
-    ]))
-  };
-  const clearCart = () => {
-    setCart([]);
-  };
-
-  return (
-    <CartContext.Provider value={(cart, addToCart, clearCart)}>
-      {children}
-    </CartContext.Provider>
-  );
-*/}
-
 import { createContext, useState }  from "react";
 
 export const CartContext = createContext();
@@ -54,6 +20,9 @@ export const CartProvider = ({ children }) => {
         }
     }
 
+    const getTotal = () => {
+        return cart.reduce((total, item) => total + (item.item.precio * item.cantidad), 0);
+    };
 
     const removeItem = (itemId , quantityToRemove) => {
         const updatedCart = cart.map((cartItem) => {
@@ -77,7 +46,7 @@ export const CartProvider = ({ children }) => {
 
 return (
     <>
-    <CartContext.Provider value={{ cart, setCart, addItem, removeItem}}>
+    <CartContext.Provider value={{ cart, setCart, addItem, removeItem, getTotal}}>
         {children}
     </CartContext.Provider>
     </>

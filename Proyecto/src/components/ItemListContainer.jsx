@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import productos from '../Mock/MockAsync.json'
-import { fakeApiCall } from "../Mock/fakeApiCall";
 import { collection, doc, getDocs, getFirestore, where, query } from 'firebase/firestore'
 import ItemDetailContainer from "./ItemDetailContainer";
 
