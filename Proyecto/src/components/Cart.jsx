@@ -15,7 +15,7 @@ const CartWidget = () => {
 
     const finalizePurchase = () => {
         const total = getTotal();  
-        const orderId = `ORD-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+        const orderId = `ORD-${Date.now()}-${Math.random().toString(36)}`;
         setOrderInfo({ id: orderId, total: total, completed: true });
         setIsCartVisible(false);  
     };
