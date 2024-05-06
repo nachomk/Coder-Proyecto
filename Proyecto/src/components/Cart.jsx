@@ -5,7 +5,7 @@ import { CartIcon } from '../assets/icons';
 
 const CartWidget = () => {
     const cartCheckboxId = useId();
-    const { cart, removeItem, getTotal } = useContext(CartContext);
+    const { cart, removeItem, getTotal, getItemCount } = useContext(CartContext);
     const [isCartVisible, setIsCartVisible] = useState(false);
     const [orderInfo, setOrderInfo] = useState({ id: null, total: 0, completed: false });
 
@@ -25,6 +25,11 @@ const CartWidget = () => {
             <button onClick={toggleCartVisibility} className="cart-button">
                 <CartIcon />
             </button>
+            {cart.length > 0 && (
+                <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full text-xs px-2 py-1">
+                    {getItemCount()}
+                </span>
+            )}
             {isCartVisible && (
                 <aside className="cart flex flex-col h-full">
                     <ul className="flex-grow overflow-auto p-4">
@@ -39,6 +44,9 @@ const CartWidget = () => {
                                     className="ml-4 bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded">
                                     Remove
                                 </button>
+                                <div className="text-center mt-2">
+                                    <span>Cant: {item.quantity}</span>
+                                </div>
                             </li>
                         )) : <h1 className="m-auto">No hay productos en el carrito</h1>}
                     </ul>
