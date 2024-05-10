@@ -54,7 +54,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink to="/category/3" className="hover:underline">
-                       Regalos/Accesorios
+                       Accesorios
                     </NavLink>
                   </li>
                   <li>
